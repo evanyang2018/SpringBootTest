@@ -1,4 +1,4 @@
-package com.example.demo.demo1;
+package com.example.demo.injection;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

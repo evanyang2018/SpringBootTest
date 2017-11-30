@@ -1,6 +1,4 @@
-package com.example.demo.demo1;
-
-import org.springframework.stereotype.Service;
+package com.example.demo.injection;
 
 //@Service
 public class FunctionService {
