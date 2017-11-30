@@ -2,6 +2,9 @@ package com.example.demo.scope;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+/**
+ * @author Evan Yang
+ */
 public class Main {
 
     public static void main(String[] args) {
