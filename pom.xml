@@ -90,6 +90,7 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
 		<!--commons-io 简化文件相关操作-->
 		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 		<dependency>
@@ -105,6 +106,7 @@
 			<artifactId>spring-aop</artifactId>
 			<version>4.3.13.RELEASE</version>
 		</dependency>
+
 		<!--aspectj支持-->
 		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
 		<dependency>
@@ -117,6 +119,14 @@
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
 			<version>1.8.13</version>
+		</dependency>
+
+		<!--JSR250支持-->
+		<!-- https://mvnrepository.com/artifact/javax.annotation/jsr250-api -->
+		<dependency>
+			<groupId>javax.annotation</groupId>
+			<artifactId>jsr250-api</artifactId>
+			<version>1.0</version>
 		</dependency>
 
 
