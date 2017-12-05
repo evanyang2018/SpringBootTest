@@ -22,7 +22,7 @@ public class ElConfig {
     private String osName;
     @Value("#{T (java.lang.Math).random()*100.0}")
     private double randomNumber;
-    @Value("#{demoService.another}")
+    @Value("#{ELDemoService.another}")
     private String fromAnother;
     @Value("classpath:springELtest/test.txt")
     private Resource testFile;
