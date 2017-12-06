@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 @Service
-public class DemoService {
+public class ELDemoService {
 
     @Value("其他类的属性")
     private String another;
