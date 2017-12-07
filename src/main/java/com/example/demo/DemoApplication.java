@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import com.example.demo.Test3.TestSetting;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,6 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @SpringBootApplication
 public class DemoApplication {
+	@Autowired
+	private TestSetting testSetting;
 
 	public static void main(String[] args) {
 		SpringApplication springApplication = new SpringApplication(DemoApplication.class);
@@ -24,6 +28,6 @@ public class DemoApplication {
 
 	@RequestMapping("/")
 	public String index(){
-		return  "Hello Spring Boot!";
+		return  "Hello Spring Boot!"+"A:"+testSetting.getA()+"  B:"+testSetting.getB();
 	}
 }
