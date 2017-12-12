@@ -35,7 +35,7 @@
                 stompClient.connect({},function (frame) {
                         setConnected(true);
                         console.log("connected : "+frame);
-                        stompClient.subscribe("/topic/getResponse",function (reponse) {
+                        stompClient.subscribe("/topic/getResponse",function (response) {
                             showResponse(JSON.parse(response.body).responseMessage);
                         });
                     });

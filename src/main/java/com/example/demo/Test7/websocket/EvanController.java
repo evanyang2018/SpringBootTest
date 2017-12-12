@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller;
 public class EvanController {
 
     @MessageMapping("/welcome")
-    @SendTo("/topic/getReponse")
+    @SendTo("/topic/getResponse")
     public EvanResponse say(EvanMessage message) throws Exception{
         Thread.sleep(3000);
         return new EvanResponse("welcome," + message.getName() + "!") ;
