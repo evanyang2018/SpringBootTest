@@ -16,10 +16,10 @@ public class EvanController {
     @MessageMapping("/chat")
     public void handleChat(Principal principal, String message) throws Exception {
         if (principal.getName().equals("evan")) {
-            messagingTemplate.convertAndSendToUser("evan", "/queue/notifications",
+            messagingTemplate.convertAndSendToUser("yang", "/queue/notifications",
                     principal.getName() + "-send:" + message);
         }else{
-            messagingTemplate.convertAndSendToUser("yang", "/queue/notifications",
+            messagingTemplate.convertAndSendToUser("evan", "/queue/notifications",
                     principal.getName() + "-send:" + message);
         }
     }
