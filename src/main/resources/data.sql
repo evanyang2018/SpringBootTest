@@ -1,0 +1,1 @@
+INSERT INTO person(id,name,age,address) VALUES (hibernate-squenece.nextval,'aa',32,'bb');
